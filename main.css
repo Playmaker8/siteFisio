@@ -1,0 +1,294 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic|Raleway:400);
+ body{
+	margin:25px;
+	margin-top: 0px;
+	max-width:1299px;
+	min-width: 500px;
+	box-shadow: 0 0 5px;
+	font-family: "Raleway";
+	-o-font-family: "Raleway";
+}
+a{
+	text-decoration: none;
+}
+
+.header{
+	background-color: #ffffff;
+	height: 50px;
+	border-bottom: solid 1px #D6CFCF;
+}
+
+.logo{
+	width: 650px;
+	padding-left: 20px;
+	padding-top: 5px;
+	color: #0099FF;
+	font-family: 'Orbitron', sans-serif;
+	display: inline-block;
+	font-size: 20pt;
+}
+nav{
+	display: inline-block;
+}
+nav a, nav select{
+	padding-left:15px;
+	font-size: 11px;
+	font-family: "Raleway";
+	/*text-decoration: none;*/
+	border:0;
+	color: rgb( 0, 83, 120 );
+	font-size: 10pt;
+	cursor: pointer;
+
+}
+select:focus{
+	outline:none;
+}
+
+#fisio{
+	color: #0000CC;
+}
+.Clouds{
+	height: 600px;
+	background-image: url(img/topimg.jpg);
+	background-repeat: no-repeat;
+	font-size: 16px;
+	font-family: "Roboto Condensed";
+	line-height: 1.4;
+	color:white;
+}
+.Clouds em{
+		position: absolute;
+		padding-left: 200px;
+		padding-top: 260px;
+}
+.Clouds p{
+	margin-top: 0px;
+	padding-top: 400px;
+	text-align: center;
+	font-family: "Roboto";
+	font-style: medium; 
+}
+
+.lavoro{
+	text-align: center;
+	height: 300px;
+	font-family: "Raleway";
+	background-image: url(img/lavoro.jpg);
+	color: white;
+}
+h1{
+	margin-top: 0px;
+	padding-top:40px ;
+	font-weight: 100;
+
+}
+
+.lavoro p{
+	padding-left: 400px;
+	width:500px;
+	font-size: 13pt;
+}
+
+#aprofizndizi{
+	color: white;
+	border:solid #ffffff 2px;
+	background-color: transparent;
+	width:210px;
+	height: 45px;
+	transition: 0.5s;
+}
+#leggi{
+	margin-top:50px;
+	border:solid #777777 2px;
+	background-color: transparent;
+	width:210px;
+	height: 45px;
+	transition: 0.5s;
+
+}
+
+#leggi:hover,#aprofizndizi:hover,#testi:hover,.toTop:hover{
+	border:solid #BEBEBE 2px;
+	background-color: #708090;
+	cursor: pointer;
+}
+#leggi:focus,#aprofizndizi:focus,#testi:focus,.toTop:focus{
+	outline: none;
+}
+
+.News{
+	text-align: center;
+	background-color:white;
+	height:650px;
+	font-family: "Raleway";
+}
+.News section article a{
+	color:#304050;
+	font-size:11pt;
+	float:left;
+	padding-top:149px;
+	padding-left:10px;
+}
+.News section article h6{
+	margin-left:18px;
+	display:flex;
+}
+.News div{
+	cursor:pointer;
+}
+section{
+	padding-top: 70px;
+}
+section h2{
+	color:#005379;
+	font-weight: 200;
+	font-size: 1.7em;
+	margin-top: 0px;
+}
+.FstNew, .SecNew, .ThdNew{
+	text-align: center;
+	height: 325px;
+	background-color:#f8f8f8;
+	width:355px;
+	display: inline-block;
+	position: relative;
+	overflow:hidden;
+	margin-right: 25px;
+	padding-top: 20px;
+	color:#005379;
+}
+.content{
+		margin-top:-325px;
+		padding: 0;
+		background-color: #AEA9D4;
+		display: none;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+	}
+.slider{
+	
+}
+article p {
+	text-align: justify;
+	padding-left:20px;
+	padding-right: 20px;
+	padding-top: 20px; 
+	margin-bottom: 163px;
+}
+.galandria{
+	color: white;
+	height: 500px;
+	display: flex;
+	text-align: center;	
+}
+.galler{
+	height: 500px;
+	background: url(img/galler.jpg);
+	background-repeat: no-repeat;
+	width: 50%;
+	font-size: 32px;
+	font-family: "Raleway";
+	color: rgb( 255, 255, 255 );
+	line-height: 1.2;
+}
+.galler p{
+	padding-top: 30%;
+}
+.ria{
+	height: 500px;
+	width: 50%;
+	background: url(img/Riabilitiz.jpg) ;
+	background-repeat: no-repeat;
+
+}
+.ria ul{
+	text-align: left;
+	width:230px;
+	height: 240px;
+	font-family: "Times New Roman";
+	font-size: 16px;
+	padding-left: 33%;
+	line-height: 2;
+	list-style-type: none;
+}
+.ria ul li span{
+	float: right;
+}
+.ria ul li a{
+	color: #ffffff;
+}
+.ria p{
+	font-family: "Raleway";
+	font-size: 32px;
+	line-height: 1.2;
+	padding-top: 15%;
+}
+.Ilpaz{
+	height:500px;
+	background-color: #f0f0f0;
+	text-align: center;
+}
+.Ilpaz h2{
+	padding-top: 50px;
+	margin-top: 0px;
+}
+.Ilpaz p{
+	width: 400px;
+	padding-left: 450px;
+}
+#testi{
+	margin-top:50px; 
+	border:solid #777777 2px;
+	background-color: transparent;
+	width:210px;
+	height: 45px;
+	transition: 0.5s;
+}
+.bott{
+	height: 600px;
+	display: flex;
+}
+.Feedback{
+	width: 650px;
+	height: 600px;
+	min-width: 350px;
+}
+.Feedback form{
+	min-width:210px;
+	margin-left:35%;
+	margin-right: auto;
+}
+.Feedback form input:focus{
+	outline-color: aqua;
+}
+.Contatti{
+	height: 600px;
+	width:650px;
+	background-color: #00527b;
+	float: left;
+}
+footer{
+	color:#ffffff;
+	height: 300px;
+	background-color: #292929;
+/* 	width: 1300px;
+ *//* 	box-shadow: 0px 6px 6px;*/
+}
+.toTop{
+	float:right;
+	margin-right: 46%;
+	margin-top: 235px;
+	text-align: center;
+	padding-top: 8px;
+	/* padding-top: 100px;
+	padding-left: 200px ; */
+	color: white;
+	border:solid #ffffff 2px;
+	background-color: transparent;
+	width:100px;
+	height: 25px;
+	transition: 0.5s;
+}

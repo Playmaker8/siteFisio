@@ -1,0 +1,144 @@
+<!dOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test site</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+	function foo(name){
+	return alert("Hello!)");
+}
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="logo"><span id="fisio">fisio</span>mano</div>
+			<nav><a id="top"></a>
+				<a href="">HOME</a>
+				<a href="">NEWS</a>
+				<select class="riabil">
+					<option>RIABILITIZONE</option>
+					<option>Sec option</option>
+					<option>Thd option</option>
+				</select>
+				<select class="Chi">
+					<option>CHI SAMO</option>
+					<option>Sec option</option>
+					<option>Thd option</option>
+				</select>
+				<select class="Link">
+					<option>LINK POTAT</option>
+					<option>Sec option</option>
+					<option>Thd option</option>
+				</select>
+				<a href="">CONTATTI</a>
+		</nav>
+	</div>
+	<div class="Clouds"><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Rerum doloremque adipisci molestiae id laboriosam atque maxime quisquam ducimus, inventore ea eaque<br> quibusdam, commodi voluptatum dicta obcaecati eum quod provident assumenda?"</em>
+	<p>Pulvertaft</p></div>
+	<div class="lavoro"><h1>Il nostro lavoro</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque laborum nihil adipisci quibusdam illo, asperiores labore qui natus sapiente, totam saepe vitae, ut consequuntur pariatur nemo nisi ex iste similique.</p>
+		<button id="aprofizndizi" value="APROFINIDIZI" onclick="foo()">APROFINIDIZI</button>
+	</div>
+	<div class="News">
+		<section>
+		<h2>News and events</h2>
+		<article class="FstNew">
+			<h6>Mon 7 Dec</h6>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+			<div class="slider">APROFONDISCI &rarr;<div class="content">Top secret!</div></div>
+			
+		</article>
+		<article class="SecNew">
+		<h6>Mon 6 Dec</h6>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+			<div class="slider">APROFONDISCI &rarr;<div class="content">Top secret!</div></div>
+			
+		</article>
+		<article class="ThdNew">
+		<h6>Mon 5 Dec</h6>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+			<div class="slider">APROFONDISCI &rarr;
+				<div class="content">Top secret!</div>
+			</div>
+			
+		</article>
+		</section>
+		<button id="leggi" value="LEGGI" onclick="foo()">LEGGI</button>
+	</div>
+	<div class="galandria">
+		<div class="galler"><p>Vai alla galleria Tutori &rarr;</p></div>
+		<div class="ria"><p>Riabilitazione</p>
+		<ul>
+			<li>
+					<a href="">La riabilitazione della mano <span>&rarr;</span></a>
+			</li>
+			<li>
+					<a href="">La riabilitazione del gomito <span>&rarr;</span></a>
+			</li>
+			<li>
+					<a href="">Campi di intervento <span>&rarr;</span></a>
+			</li>
+			<li>
+					<a href="">Tutori <span>&rarr;</span></a>
+			</li>
+			<li>
+					<a href="">Piccoli consigli pratici <span>&rarr;</span></a>
+			</li>
+			<li>
+					<a href="">Terapie specialistiche <span>&rarr;</span></a>
+			</li>
+			<li>
+					<a href="">Casi clinici <span>&rarr;</span></a>
+			</li>
+			<li>
+					<a href="">Patologie <span>&rarr;</span></a>
+			</li>
+		</ul>
+		</div>
+	</div>
+	<div class="Ilpaz">
+		<h2>I pazienti racconnato</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia facere molestias, magnam porro, veritatis aliquid voluptates odio, pariatur libero expedita, illo accusamus quae similique nulla sapiente vero illum. Quaerat, ducimus?</p>
+		<blockquote>Fabio,<br> Tennosivo alosdf ololo lalala</blockquote>
+		<button id="testi" value="LEGGI TESTI" onclick="foo()">LEGGI LE TESTI MONAGE</button>
+	</div>
+	<div class="bott">
+	<div class="Feedback">
+		<form action="#">
+			<p>INVIACI UN MESSAGGIO</p>
+			<input type="text" placeholder="NOME"><br>
+			<input type="email" placeholder="EMAIL"><br>
+		</form>
+	</div>
+	<div class="Contatti"></div>
+	</div>
+	<footer>
+		<a href="#Top" class="toTop">Top</a>
+		<!-- <p>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+			<img style="border:0;width:88px;height:31px"
+				src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+				alt="Правильный CSS!" />
+			</a>
+		</p>
+		<p>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="http://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Правильный CSS!" />
+			</a>
+		</p> -->
+	</footer>
+	<script> 
+$(document).ready(function(){
+	$(".slider").click(function(){
+		$(this).children().animate({
+			width: 'toggle'
+		});
+	});
+});
+</script> 
+</body>
+</html>
