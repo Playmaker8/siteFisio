@@ -15,7 +15,8 @@ a{
 
 .header{
 	background-color: #ffffff;
-	height: 50px;
+	min-height: 55px;
+	height:auto;
 	border-bottom: solid 1px #D6CFCF;
 }
 
@@ -59,21 +60,23 @@ select:focus{
 	color:white;
 }
 .Clouds em{
+		text-align: center;
 		position: absolute;
-		padding-left: 200px;
-		padding-top: 260px;
+		padding-left: 9%;
+		padding-top: 300px;
+		width:49%;
 }
 .Clouds p{
 	margin-top: 0px;
 	padding-top: 400px;
 	text-align: center;
 	font-family: "Roboto";
-	font-style: medium; 
+	/* font-style: medium;  */
 }
 
 .lavoro{
 	text-align: center;
-	height: 300px;
+	height: auto;
 	font-family: "Raleway";
 	background-image: url(img/lavoro.jpg);
 	color: white;
@@ -86,8 +89,8 @@ h1{
 }
 
 .lavoro p{
-	padding-left: 400px;
-	width:500px;
+	padding-left: 30%;
+	width:40%;
 	font-size: 13pt;
 }
 
@@ -96,15 +99,16 @@ h1{
 	border:solid #ffffff 2px;
 	background-color: transparent;
 	width:210px;
-	height: 45px;
+	height: 50px;
 	transition: 0.5s;
+	margin-bottom: 95px;
 }
 #leggi{
-	margin-top:50px;
+	margin-top:70px;
 	border:solid #777777 2px;
 	background-color: transparent;
 	width:210px;
-	height: 45px;
+	height: 50px;
 	transition: 0.5s;
 
 }
@@ -121,8 +125,10 @@ h1{
 .News{
 	text-align: center;
 	background-color:white;
-	height:650px;
+	height:auto;
 	font-family: "Raleway";
+	margin-bottom: 70px;
+
 }
 .News section article a{
 	color:#304050;
@@ -146,6 +152,7 @@ section h2{
 	font-weight: 200;
 	font-size: 1.7em;
 	margin-top: 0px;
+	margin-bottom: 85px;
 }
 .FstNew, .SecNew, .ThdNew{
 	text-align: center;
@@ -168,9 +175,9 @@ section h2{
 		height: 100%;
 		width: 100%;
 	}
-.slider{
+/* .slider{
 	
-}
+} */
 article p {
 	text-align: justify;
 	padding-left:20px;
@@ -189,7 +196,7 @@ article p {
 	background: url(img/galler.jpg);
 	background-repeat: no-repeat;
 	width: 50%;
-	font-size: 32px;
+	font-size: xx-large;
 	font-family: "Raleway";
 	color: rgb( 255, 255, 255 );
 	line-height: 1.2;
@@ -204,25 +211,26 @@ article p {
 	background-repeat: no-repeat;
 
 }
-.ria ul{
+.ria ul, .Contatti ul{
 	text-align: left;
-	width:230px;
-	height: 240px;
+	width:33%;
+	overflow: hidden;
+	height: 245px;
 	font-family: "Times New Roman";
 	font-size: 16px;
 	padding-left: 33%;
 	line-height: 2;
 	list-style-type: none;
 }
-.ria ul li span{
+.ria ul li span,.Contatti ul li span{
 	float: right;
 }
-.ria ul li a{
+.ria ul li a, .Contatti ul li a{
 	color: #ffffff;
 }
 .ria p{
 	font-family: "Raleway";
-	font-size: 32px;
+	font-size: xx-large;
 	line-height: 1.2;
 	padding-top: 15%;
 }
@@ -248,45 +256,77 @@ article p {
 	transition: 0.5s;
 }
 .bott{
-	height: 600px;
+	height: auto;
 	display: flex;
 }
 .Feedback{
-	width: 650px;
+	text-align: center;
+	width: 50%;
 	height: 600px;
-	min-width: 350px;
+	font-weight: bolder;
+	/* min-width: 350px; */
 }
 .Feedback form{
-	min-width:210px;
-	margin-left:35%;
+	margin-left:8%;
 	margin-right: auto;
 }
-.Feedback form input:focus{
-	outline-color: aqua;
+
+.Feedback form input{
+	width:390px;
+	margin-top: 20px;
+	height: 50px;
+	background-color: #f0f0f0;
+	border:0;
+}
+.Feedback form textarea{
+	margin-top: 20px;
+	resize: none;
+	border:0;
+	background-color: #f0f0f0;
 }
 .Contatti{
 	height: 600px;
-	width:650px;
+	width:50%;
 	background-color: #00527b;
 	float: left;
+	color:#ffffff;
+}
+.Contatti p{
+	font-size: xx-large;
+	padding-left: 40%;
+	padding-top: 155px;
 }
 footer{
-	color:#ffffff;
+	color:#9A8E8E;
 	height: 300px;
 	background-color: #292929;
+	font-size: small;
 /* 	width: 1300px;
  *//* 	box-shadow: 0px 6px 6px;*/
 }
+footer p:first-child{
+	padding-top: 26px;
+	width:21%;
+	padding-left: 40%;
+	text-align: center;
+	margin: 0;
+}
+footer p{
+	padding-top: 26px;
+	width:33%;
+	padding-left: 34%;
+	text-align: center;
+	margin: 0;
+}
 .toTop{
-	float:right;
-	margin-right: 46%;
-	margin-top: 235px;
+	display: block;
+	margin-left: 46%;
+	margin-top: 81px;
+	margin-bottom: 10px;
 	text-align: center;
 	padding-top: 8px;
-	/* padding-top: 100px;
-	padding-left: 200px ; */
-	color: white;
-	border:solid #ffffff 2px;
+	color: #9A8E8E;
+	border:solid #9A8E8E 2px;
 	background-color: transparent;
 	width:100px;
 	height: 25px;
