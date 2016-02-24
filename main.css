@@ -5,7 +5,7 @@
 	margin-top: 0px;
 	max-width:1299px;
 	min-width: 500px;
-	box-shadow: 0 0 5px;
+	box-shadow: 0 7px 7px;
 	font-family: "Raleway";
 	-o-font-family: "Raleway";
 }
@@ -235,7 +235,7 @@ article p {
 	padding-top: 15%;
 }
 .Ilpaz{
-	height:500px;
+	height:auto;
 	background-color: #f0f0f0;
 	text-align: center;
 }
@@ -244,11 +244,42 @@ article p {
 	margin-top: 0px;
 }
 .Ilpaz p{
-	width: 400px;
-	padding-left: 450px;
+	width: 43%;
+	padding-left: 28%;
+}
+label {
+	display: block;
+	cursor: pointer;
+	margin-left: 44.5%;
+}
+
+input[type=radio]{
+	display: none;
+}
+label:before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	margin-left: 23px;
+	float: left;
+	position: relative;
+	background-color: #aaa;
+}
+label:before {
+	border-radius: 8px;
+}
+input[type=radio]:checked + label:before {
+	content: "\2022";
+	color: #f3f3f3;
+	font-size: 30px;
+	text-align: center;
+	line-height: 18px;
 }
 #testi{
-	margin-top:50px; 
+	/* display: block;
+	margin-left: 42%; */
+	margin-top:50px;
+	margin-bottom: 43px;
 	border:solid #777777 2px;
 	background-color: transparent;
 	width:210px;
@@ -267,27 +298,43 @@ article p {
 	/* min-width: 350px; */
 }
 .Feedback form{
-	margin-left:8%;
-	margin-right: auto;
+	width: 60%;
+	margin-left:22%;
 }
 
 .Feedback form input{
 	width:390px;
+	box-sizing: border-box;
+	padding-left: 12px;
 	margin-top: 20px;
 	height: 50px;
 	background-color: #f0f0f0;
+	resize: none;
 	border:0;
 }
 .Feedback form textarea{
+	box-sizing: border-box;
+	padding-left: 13px;
 	margin-top: 20px;
 	resize: none;
 	border:0;
 	background-color: #f0f0f0;
 }
+.forSubm{
+	font-size: small;
+	font-weight: 100;
+	text-align: justify;
+	color: #919191;
+}
+.Feedback form input[type=submit]{
+	background-color:#00527d;
+	color:#fff;
+}
+
 .Contatti{
 	height: 600px;
 	width:50%;
-	background-color: #00527b;
+	background-color: #00527d;
 	float: left;
 	color:#ffffff;
 }
@@ -298,7 +345,7 @@ article p {
 }
 footer{
 	color:#9A8E8E;
-	height: 300px;
+	height: 100%;
 	background-color: #292929;
 	font-size: small;
 /* 	width: 1300px;
@@ -320,9 +367,9 @@ footer p{
 }
 .toTop{
 	display: block;
-	margin-left: 46%;
-	margin-top: 81px;
-	margin-bottom: 10px;
+	margin-left: 46.5%;
+	margin-top: 51px;
+	margin-bottom: 28px;
 	text-align: center;
 	padding-top: 8px;
 	color: #9A8E8E;
