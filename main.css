@@ -1,13 +1,23 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic|Raleway:400);
- body{
-	margin:25px;
-	margin-top: 0px;
+*{
+	box-sizing: border-box;
+	margin:0;
+}
+body{
+	margin:auto;
 	max-width:1299px;
 	min-width: 500px;
 	box-shadow: 0 7px 7px;
 	font-family: "Raleway";
 	-o-font-family: "Raleway";
+}
+body:after{
+content: "";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
 }
 a{
 	text-decoration: none;
@@ -36,11 +46,14 @@ nav a, nav select{
 	padding-left:15px;
 	font-size: 11px;
 	font-family: "Raleway";
-	/*text-decoration: none;*/
+	appearance:none;
 	border:0;
 	color: rgb( 0, 83, 120 );
 	font-size: 10pt;
 	cursor: pointer;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-o-appearance:none;
 
 }
 select:focus{
@@ -80,28 +93,33 @@ select:focus{
 	font-family: "Raleway";
 	background-image: url(img/lavoro.jpg);
 	color: white;
+	min-height: 340px;
 }
 h1{
-	margin-top: 0px;
-	padding-top:40px ;
+	/*! margin-top: 0px; */
+	padding-top:55px;
 	font-weight: 100;
 
 }
 
 .lavoro p{
-	padding-left: 30%;
-	width:40%;
-	font-size: 13pt;
+	/*! padding-left: 30%; */
+	/*! width:40%; */
+	font-size: 16px;
+	max-width: 650px;
+	margin: auto;
+	padding: 35px 0px;
 }
 
 #aprofizndizi{
 	color: white;
 	border:solid #ffffff 2px;
 	background-color: transparent;
-	width:210px;
+	width:230px;
 	height: 50px;
 	transition: 0.5s;
-	margin-bottom: 95px;
+	font-weight: bold;
+	letter-spacing: 4px;
 }
 #leggi{
 	margin-top:70px;
@@ -276,8 +294,7 @@ input[type=radio]:checked + label:before {
 	line-height: 18px;
 }
 #testi{
-	/* display: block;
-	margin-left: 42%; */
+
 	margin-top:50px;
 	margin-bottom: 43px;
 	border:solid #777777 2px;
@@ -288,14 +305,20 @@ input[type=radio]:checked + label:before {
 }
 .bott{
 	height: auto;
-	display: flex;
+}
+.bott:after{
+content: "";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
 }
 .Feedback{
 	text-align: center;
 	width: 50%;
 	height: 600px;
 	font-weight: bolder;
-	/* min-width: 350px; */
+	float:left;
 }
 .Feedback form{
 	width: 60%;
@@ -345,33 +368,27 @@ input[type=radio]:checked + label:before {
 }
 footer{
 	color:#9A8E8E;
-	height: 100%;
+	width:100%;
+	min-height: 300px;
 	background-color: #292929;
 	font-size: small;
-/* 	width: 1300px;
- *//* 	box-shadow: 0px 6px 6px;*/
+	float:left;
 }
 footer p:first-child{
-	padding-top: 26px;
-	width:21%;
-	padding-left: 40%;
 	text-align: center;
-	margin: 0;
+	max-width: 220px;
+	padding: 40px 0 0 0;
+	margin: auto;
 }
 footer p{
-	padding-top: 26px;
-	width:33%;
-	padding-left: 34%;
 	text-align: center;
-	margin: 0;
+	padding: 35px 0 35px 0;
 }
 .toTop{
 	display: block;
-	margin-left: 46.5%;
-	margin-top: 51px;
-	margin-bottom: 28px;
+	margin:auto;
 	text-align: center;
-	padding-top: 8px;
+	padding-top: 4px;
 	color: #9A8E8E;
 	border:solid #9A8E8E 2px;
 	background-color: transparent;
