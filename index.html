@@ -51,7 +51,6 @@
 			<h6>27 Luglio 2015</h6>
 			<p>Hand Fun Meeting - Barcellona, 18-19 Settembre 2015. </p>
 			<div class="slider">APROFONDISCI &rarr;
-				<div class="content">Top secret!</div>
 			</div>
 			
 		</article>
@@ -59,14 +58,13 @@
 		<h6>11 Luglio 2015</h6>
 			<p>Fisiomano-Milano Chiusura estiva.</p>
 			<div class="slider">APROFONDISCI &rarr;
-				<div class="content">Top secret!</div>
+
 			</div>
 		</article>
 		<article class="ThdNew">
 		<h6>08 Luglio 2015</h6>
 			<p>59 Congresso Nazionale SICM - Viterbo, 8-10 Ottobre 2015</p>
 			<div class="slider">APROFONDISCI &rarr;
-				<div class="content">Top secret!</div>
 			</div>
 		</article>
 		</section>
@@ -107,13 +105,13 @@
 	</div>
 	<div class="Ilpaz">
 		<h2>I pazienti racconnato</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia facere molestias, magnam porro, veritatis aliquid voluptates odio, pariatur libero expedita, illo accusamus quae similique nulla sapiente vero illum. Quaerat, ducimus?</p>
+		<p id="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia facere molestias, magnam porro, veritatis aliquid voluptates odio, pariatur libero expedita, illo accusamus quae similique nulla sapiente vero illum. Quaerat, ducimus?</p>
 		<blockquote>FABIO,<br> Tennosivo alosdf ololo lalala</blockquote>
-			<input type="radio" name="RButton" id="fstButton" value="">
+			<input type="radio" name="RButton" id="fstButton">
 				<label for="fstButton"></label>
-			<input type="radio" name="RButton" id="secButton"value="">
+			<input type="radio" name="RButton" id="secButton">
 				<label for="secButton"></label>
-			<input type="radio" name="RButton" id="thdButton"value="">
+			<input type="radio" name="RButton" id="thdButton">
 				<label for="thdButton"></label>
 			<br>
 		<button id="testi" value="LEGGI TESTI" onclick="foo()">LEGGI LE TESTI MONAGE</button>
@@ -157,13 +155,9 @@
 		<a href="#Top" class="toTop">TOP</a>
 	</footer>
 	<script> 
-$(document).ready(function(){
-	$(".slider").click(function(){
-		$(this).children().animate({
-			width: 'toggle'
-		});
-	});
-});
-</script> 
+	function myFunction() {
+	document.getElementById("demo").innerHTML = "Hello World";
+}
+	</script> 
 </body>
 </html>
