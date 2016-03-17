@@ -1,16 +1,20 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic|Raleway:400);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 *{
 	box-sizing: border-box;
 	margin:0;
 }
 body{
 	margin:auto;
-	max-width:1299px;
+	max-width:1300px;
 	min-width: 500px;
 	box-shadow: 0 7px 7px;
 	font-family: "Raleway";
+	-webkit-font-family:"Raleway";
+	-moz-font-family:"Raleway";
 	-o-font-family: "Raleway";
+
 }
 body:after{
 content: "";
@@ -28,22 +32,23 @@ a{
 	min-height: 55px;
 	height:auto;
 	border-bottom: solid 1px #D6CFCF;
+	overflow: hidden;
 }
 
 .logo{
-	width: 650px;
-	padding-left: 20px;
-	padding-top: 5px;
+	padding: 14px 34px;
 	color: #0099FF;
 	font-family: 'Orbitron', sans-serif;
-	display: inline-block;
-	font-size: 20pt;
+	float:left;
+	font-size: 16pt;
 }
 nav{
-	display: inline-block;
+	display: block;
+	float:right;
+	padding: 23px 40px 0 0;
 }
 nav a, nav select{
-	padding-left:15px;
+	margin-left:15px;
 	font-size: 11px;
 	font-family: "Raleway";
 	appearance:none;
@@ -68,23 +73,22 @@ select:focus{
 	background-image: url(img/topimg.jpg);
 	background-repeat: no-repeat;
 	font-size: 16px;
-	font-family: "Roboto Condensed";
+	font-family: "Roboto Condensed", sans-serif;
 	line-height: 1.4;
 	color:white;
 }
 .Clouds em{
 		text-align: center;
-		position: absolute;
-		padding-left: 9%;
-		padding-top: 300px;
-		width:49%;
+				padding-left: 15%;
+				padding-top: 300px;
+				display: inline-block;
+				letter-spacing: 0.5px;
+				font-size: 17px;
 }
 .Clouds p{
-	margin-top: 0px;
-	padding-top: 400px;
 	text-align: center;
+	margin-top: 10px;
 	font-family: "Roboto";
-	/* font-style: medium;  */
 }
 
 .lavoro{
@@ -96,15 +100,12 @@ select:focus{
 	min-height: 340px;
 }
 h1{
-	/*! margin-top: 0px; */
 	padding-top:55px;
 	font-weight: 100;
 
 }
 
 .lavoro p{
-	/*! padding-left: 30%; */
-	/*! width:40%; */
 	font-size: 16px;
 	max-width: 650px;
 	margin: auto;
@@ -119,7 +120,8 @@ h1{
 	height: 50px;
 	transition: 0.5s;
 	font-weight: bold;
-	letter-spacing: 4px;
+	letter-spacing: .5px;
+	font-family: "Raleway";
 }
 #leggi{
 	margin-top:70px;
@@ -127,8 +129,10 @@ h1{
 	background-color: transparent;
 	width:210px;
 	height: 50px;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	letter-spacing: .5px;
 	transition: 0.5s;
-
 }
 
 #leggi:hover,#aprofizndizi:hover,#testi:hover,.toTop:hover{
@@ -156,11 +160,18 @@ h1{
 	padding-left:10px;
 }
 .News section article h6{
-	margin-left:18px;
+	margin:50px 0 30px 30px;
 	display:flex;
+	font-family: "Roboto", sans-serif;
+	font-weight: normal;
 }
 .News div{
 	cursor:pointer;
+	font-family: "Roboto", sans-serif;
+	font-size: 12px;
+	float: left;
+	margin-left: 30px;
+	color:#333;
 }
 section{
 	padding-top: 70px;
@@ -193,21 +204,25 @@ section h2{
 		height: 100%;
 		width: 100%;
 	}
-/* .slider{
-	
-} */
 article p {
-	text-align: justify;
-	padding-left:20px;
-	padding-right: 20px;
-	padding-top: 20px; 
-	margin-bottom: 163px;
+	text-align: left;
+	margin-left:30px;
+	max-width: 260px;
+	min-height: 155px;
+	font-size: 24px;
 }
 .galandria{
 	color: white;
 	height: 500px;
 	display: flex;
 	text-align: center;	
+}
+.galler:after{
+content: "";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
 }
 .galler{
 	height: 500px;
@@ -226,22 +241,19 @@ article p {
 	height: 500px;
 	width: 50%;
 	background: url(img/Riabilitiz.jpg) ;
-	background-repeat: no-repeat;
 
 }
 .ria ul, .Contatti ul{
 	text-align: left;
-	width:33%;
 	overflow: hidden;
-	height: 245px;
-	font-family: "Times New Roman";
 	font-size: 16px;
-	padding-left: 33%;
 	line-height: 2;
 	list-style-type: none;
+	display:inline-block;
 }
 .ria ul li span,.Contatti ul li span{
 	float: right;
+	padding-left: 5px;
 }
 .ria ul li a, .Contatti ul li a{
 	color: #ffffff;
@@ -253,17 +265,16 @@ article p {
 	padding-top: 15%;
 }
 .Ilpaz{
-	height:auto;
+	min-height:500px;
 	background-color: #f0f0f0;
 	text-align: center;
 }
 .Ilpaz h2{
-	padding-top: 50px;
-	margin-top: 0px;
+	padding: 80px 0 48px 0;
 }
 .Ilpaz p{
-	width: 43%;
-	padding-left: 28%;
+	margin: auto;;
+	max-width: 650px;
 }
 label {
 	display: block;
@@ -356,6 +367,7 @@ visibility: hidden;
 
 .Contatti{
 	height: 600px;
+	text-align: center;
 	width:50%;
 	background-color: #00527d;
 	float: left;
@@ -363,7 +375,6 @@ visibility: hidden;
 }
 .Contatti p{
 	font-size: xx-large;
-	padding-left: 40%;
 	padding-top: 155px;
 }
 footer{
@@ -376,7 +387,7 @@ footer{
 }
 footer p:first-child{
 	text-align: center;
-	max-width: 220px;
+	max-width: 223px;
 	padding: 40px 0 0 0;
 	margin: auto;
 }
@@ -396,3 +407,8 @@ footer p{
 	height: 25px;
 	transition: 0.5s;
 }
+@media (max-width: 755px){
+	nav{
+		display: none;
+	}
+} 
