@@ -213,7 +213,6 @@ article p {
 .galandria{
 	color: white;
 	height: 500px;
-	display: flex;
 	text-align: center;	
 }
 .galler:after{
@@ -228,6 +227,7 @@ visibility: hidden;
 	background: url(img/galler.jpg);
 	background-repeat: no-repeat;
 	width: 50%;
+	float: left;
 	font-size: xx-large;
 	font-family: "Raleway";
 	color: rgb( 255, 255, 255 );
@@ -239,6 +239,7 @@ visibility: hidden;
 .ria{
 	height: 500px;
 	width: 50%;
+	float: left;
 	background: url(img/Riabilitiz.jpg) ;
 
 }
@@ -321,16 +322,12 @@ clear: both;
 visibility: hidden;
 }
 .Feedback{
-	padding-top: 39px;
+	padding: 1% 10%;
 	text-align: center;
 	width: 50%;
 	height: 600px;
 	font-weight: bolder;
 	float:left;
-}
-.Feedback form{
-	width: 60%;
-	margin-left:22%;
 }
 
 .Feedback form input{
@@ -409,8 +406,21 @@ footer p{
 	height: 30px;
 	transition: 0.5s;
 }
-@media (max-width: 755px){
+@media (max-width: 768px){
+	.Feedback{
+		padding: 1%;
+		float:none;
+		width:auto;
+	}
+	.galandria{
+		height: auto;
+	}
+	.Contatti, .galler, .ria{
+		float:none;
+		width:auto;
+		background-size: cover;
+	}
 	nav{
 		display: none;
 	}
-} 
+}
