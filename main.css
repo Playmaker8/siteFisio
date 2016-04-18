@@ -8,7 +8,7 @@
 body{
 	margin:auto;
 	max-width:1300px;
-	min-width: 500px;
+	min-width: 300px;
 	box-shadow: 0 7px 7px;
 	font-family: "Raleway";
 	-webkit-font-family:"Raleway";
@@ -29,6 +29,10 @@ a{
 header{
 	background-color: #ffffff;
 	min-height: 55px;
+	position: fixed;
+	max-width: 1300px;
+	width:100%;
+	z-index: 1;
 	height:auto;
 	border-bottom: solid 1px #D6CFCF;
 	overflow: hidden;
@@ -55,6 +59,8 @@ nav a, nav select{
 	color: rgb( 0, 83, 120 );
 	font-size: 10pt;
 	cursor: pointer;
+
+	
 	-webkit-appearance:none;
 	-moz-appearance:none;
 	-o-appearance:none;
@@ -182,11 +188,11 @@ section h2{
 	margin-top: 0px;
 	margin-bottom: 85px;
 }
-.FstNew, .SecNew, .ThdNew{
+.firstNew, .secondNew, .thirdNew{
 	text-align: center;
 	height: 325px;
 	background-color:#f8f8f8;
-	width:355px;
+	
 	display: inline-block;
 	position: relative;
 	overflow:hidden;
@@ -286,21 +292,23 @@ visibility: hidden;
 	max-width: 650px;
 }
 input[type=radio]{
-	width:28px;
-	margin: 0;
-	padding: 0;
-	opacity: 0;
+	display: none;
+	cursor: default;
+	
 }
 input[type=radio] + label {
 	display: inline-block;
-	margin-left: -25px;
 	height:12px;
+	cursor: pointer;
 	padding-left: 18px;
-	background: url('images/radButton.png') no-repeat 0 0;
+	background: url('img/radButton.png') no-repeat 0 0;
 	line-height: 24px;
 }
 input[type=radio]:checked + label{
-	background-image :url('images/radButton_active.png');
+	background-image :url('img/radButton_active.png');
+}
+#fstButton:checked ~ p#demo{
+	opacity:0.5;
 }
 #testi{
 	margin-top:60px;
@@ -321,7 +329,7 @@ height: 0;
 clear: both;
 visibility: hidden;
 }
-.Feedback{
+.feedback{
 	padding: 1% 10%;
 	text-align: center;
 	width: 50%;
@@ -330,7 +338,7 @@ visibility: hidden;
 	float:left;
 }
 
-.Feedback form input{
+.feedback form input{
 	width:390px;
 	box-sizing: border-box;
 	padding-left: 18px;
@@ -341,7 +349,7 @@ visibility: hidden;
 	resize: none;
 	border:0;
 }
-.Feedback form textarea{
+.feedback form textarea{
 	box-sizing: border-box;
 	padding: 18px;
 	font-size: 12px;
@@ -358,9 +366,10 @@ visibility: hidden;
 	text-align: justify;
 	color: #919191;
 }
-.Feedback form input[type=submit]{
+.feedback form input[type=submit]{
 	background-color:#00527d;
 	color:#fff;
+	cursor: pointer;
 }
 
 .Contatti{
@@ -407,7 +416,7 @@ footer p{
 	transition: 0.5s;
 }
 @media (max-width: 768px){
-	.Feedback{
+	.feedback{
 		padding: 1%;
 		float:none;
 		width:auto;
