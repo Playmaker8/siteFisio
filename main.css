@@ -415,7 +415,7 @@ footer p{
 	height: 30px;
 	transition: 0.5s;
 }
-@media (max-width: 768px){
+@media (max-width: 769px){
 	.feedback{
 		padding: 1%;
 		float:none;
